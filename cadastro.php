@@ -6,6 +6,7 @@
  * Time: 14:13
  */
 ?>
+<script type="text/javascript" src="js/cadastro.js"></script>
 <form>
     <div align="center" class="row">
         <div class="form-group col-md-3"></div>
@@ -18,6 +19,7 @@
         <div class="form-group col-md-3"></div>
         <div class="form-group col-md-6">
             <label for="inputName">Nome</label>
+            <input type="text" name="nome" class="form-control" id="inputName" placeholder="Nome Completo">
         </div>
         <div class="form-group col-md-3"></div>
     </div>
@@ -62,20 +64,21 @@
         </div>
         <div class="form-group col-md-3"></div>
     </div>
+    <div class="row">
         <div class="form-group col-md-3"></div>
+        <div class="form-group col-md-3">
             <label for="inputCity">fisica</label>
-            <input type="radio" class="form-control"  onclick="tipo(this.value)" name="tipoPessoa" value="1" id="inputFisica">
             <input type="radio" class="form-control" onclick="tipo(this.value)" name="tipoPessoa" value="1"
                    id="inputFisica">
         </div>
         <div class="form-group col-md-3">
             <label for="inputCity">Jurídica</label>
-            <input type="radio" class="form-control"  onclick="tipo(this.value)" name="tipoPessoa" value="2" id="inputJuridica">
             <input type="radio" class="form-control" onclick="tipo(this.value)" name="tipoPessoa" value="2"
                    id="inputJuridica">
         </div>
         <div class="form-group col-md-3"></div>
     </div>
+    <div class="row" id="cpf" style="display: none">
         <div class="form-group col-md-3"></div>
         <div class="form-group col-md-6">
             <label for="inputCity">CPF</label>
@@ -83,6 +86,7 @@
         </div>
         <div class="form-group col-md-3"></div>
     </div>
+    <div class="row" id="cnpj" style="display: none">
         <div class="form-group col-md-3"></div>
         <div class="form-group col-md-6">
             <label for="inputCity">CNPJ</label>
